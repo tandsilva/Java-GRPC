@@ -5,8 +5,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.0</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>2.7.8</version>
+		<relativePath />
 	</parent>
 	<groupId>com.TotonX</groupId>
 	<artifactId>grpc-spring-course</artifactId>
@@ -65,7 +65,7 @@
 			<extension>
 				<groupId>kr.motd.maven</groupId>
 				<artifactId>os-maven-plugin</artifactId>
-				<version>1.7.0</version>
+				<version>1.6.2</version>
 			</extension>
 		</extensions>
 		<plugins>
