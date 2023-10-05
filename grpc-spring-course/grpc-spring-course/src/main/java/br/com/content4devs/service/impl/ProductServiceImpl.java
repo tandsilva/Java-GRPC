@@ -1,5 +1,6 @@
 package br.com.content4devs.service.impl;
 
+import br.com.content4devs.Domain.Product;
 import br.com.content4devs.Repository.ProductRepository;
 import br.com.content4devs.dto.ProductOutputDto;
 import br.com.content4devs.dto.Product_InputDto;
@@ -18,9 +19,10 @@ private final ProductRepository productRepository;
 
     @Override
     public ProductOutputDto create(Product_InputDto inputDto) {
-        var product= ProductConverterUtil.productImputDtoToProduct(inputDto);
+        var product = ProductConverterUtil.productImputDtoToProduct(inputDto);
+        var productCreate = this.productRepository.save(product);
 
-        return null;
+        return ProductConverterUtil.productToProductOutputDto(productCreate);
     }
 
     @Override
