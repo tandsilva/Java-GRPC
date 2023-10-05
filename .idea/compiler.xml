@@ -6,17 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-course-grpc-products-service" />
+        <module name="grpc-spring-course" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="grpc-spring-course" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="grpc-spring-course" options="-parameters" />
-      <module name="spring-course-grpc-products-service" options="-parameters" />
     </option>
   </component>
 </project>
