@@ -14,7 +14,7 @@ private  Long id;
 private  String name;
 private  Double price;
 private  Integer quantityInStock;
-
+//para usar o comparador la na frente os nomes das variaveis dever ser iguais do pacote domain e dto
 
     public Product() {
     }

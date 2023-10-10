@@ -7,13 +7,16 @@ public class ProductOutputDto {
     private final Double price;
     private final Integer quantityInStock;
 
+
     public ProductOutputDto(Long id, String name, Double price, Integer quantityInStock) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.quantityInStock = quantityInStock;
     }
-
+    public Long getId() {
+        return id;
+    }
     public String getName() {
         return name;
     }
@@ -26,7 +29,5 @@ public class ProductOutputDto {
         return quantityInStock;
     }
 
-    public Long getId() {
-        return id;
-    }
+
 }
