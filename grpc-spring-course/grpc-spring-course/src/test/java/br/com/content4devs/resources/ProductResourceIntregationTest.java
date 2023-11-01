@@ -29,7 +29,7 @@ public class ProductResourceIntregationTest {
 
    ProductRequest productRequest = ProductRequest.newBuilder()
             .setName("product name")
-                    .setPrice(10.00)
+                    .setPrice(0.00)
                     .setQuantityInStock(100)
                     .build();
 
